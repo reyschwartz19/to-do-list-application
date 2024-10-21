@@ -1,0 +1,64 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: #f4f4f4;
+  font-family: 'Roboto', sans-serif;
+  padding: 50px;
+  
+}
+
+main{
+  background-color: #fff;
+   width: 50vw;
+   height: 90vh;
+   margin: auto;
+   border-radius: 8px;
+   padding: 50px;
+   z-index: 1;
+   font-family: 'Roboto', sans-serif;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+label{
+  display: block;
+  padding: 15px 0;
+  font-size: 23px;
+  color: #333;
+}
+input, textarea{
+  display: inline;
+  min-width: 100%;
+  height: 5vh;
+  font-size: 20px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05); 
+  border: 1px solid #ddd;
+}
+textarea{
+  min-height: 10vh;
+  max-height: 10vh;
+  max-width: 100%;
+}
+p{
+  display: flex;
+  justify-content: space-between;
+}
+button{
+  width: 5vw;
+  height: 4vh;
+  font-size: 17px;
+  background-color: #007bff;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+.material-icons{
+  margin-right: 10px;
+  color: #333;
+}
+h1{
+  color: #333;
+}
+.cancel-task-button{
+  background-color: #6c757d;
+}

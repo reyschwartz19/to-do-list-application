@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+ <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="to-do css/details.css" rel="stylesheet">
+     <title>Task Summary</title>
+  </head>
+  <body>
+  <main>
+    <header>
+      <h1>Task Summary</h1>
+      <p>Task ID:<span class="task-id"></span></p>
+    </header>
+    <section>
+      <p><strong>Task name</strong><span class="task-name-holder"></span></p>
+      <p><strong>Description</strong><span class="task-description-holder"></span></p>
+      
+    </section>
+    <hr>
+    <section>
+      <p><strong>Due Date</strong><span class="task-due-date-holder"></span></p>
+      <p><strong>Location</strong><span class="task-location-holder"></span></p>
+      <p><strong>Status</strong><span class="task-status-holder"></span>
+      <button type="button" class="mark-as-complete-button">Mark as complete</button>
+      </p>
+      
+    </section>
+    <hr>
+    <p class="buttons">
+      <button type="button" class="home-button">Home</button>
+      <button type="button" class="edit-task-button">Edit task</button>
+      <button type="button" class="delete-task-button">Delete task</button>
+      
+    </p>
+  </main>
+  <script src="to-do js/details.js"></script>
+  </body>
+  </html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+ <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="to-do css/to_do.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barrio&display=swap" rel="stylesheet">
+     <title>TO-DO LIST</title>
+  </head>
+  <body>
+    <header>
+      <div class="salutation"><span class="user_name">Test</span>'s TO-DO List</div>
+      <div class="nav-items">
+        <nav>
+          <ul class="nav-links">
+            <li class="nav-item"><a href=""><i class="material-icons">filter_alt</i></a></li>
+            <li class="nav-item"><a href="add_task.html"><i class="material-icons">add</i></a></li>
+            <li class="nav-item"><a href=""><i class="material-icons">menu</i></a></li>
+            <li class="nav-item"><a href=""><i class="material-icons">person</i></a></li>
+          </ul>
+          
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="nothing-here">
+        <img src="to-do images/rb_281.png" class="nothing-here-image" alt="Nothing Here Image">
+        <p>There's nothing here yet! Try adding a new task</p>
+      </div>
+      
+      <template class="task-template">
+        <div class="task-item">
+          <p><strong>Task Name:</strong><span class="task-name-holder"></span></p>
+          <p><strong>Due Date</strong><span class="task-due-date-holder"></span></p>
+          <p><strong>Status:</strong><span class="task-status-holder"></span></p>
+        </div>
+      </template>
+      <div class="task-list-container"></div>
+    </main>
+    <script src="to-do js/to_do.js"></script>
+  </body>
+ </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

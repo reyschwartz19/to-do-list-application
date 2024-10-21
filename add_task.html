@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+ <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="to-do css/add_task.css" rel="stylesheet">
+     <title>TO-DO LIST</title>
+  </head>
+  <body>
+    <main>
+      <h1>Create new task</h1>
+      <form>
+        <label for="task-name">Task-Name<input id="task-name" type="text" required name="task-name"></label>
+        <label for="task-description">Description<textarea id="task-description" placeholder="Enter a descrition for your task" rows="3" cols="30" ></textarea> </label>
+        <label for="task-due-date"><i class="material-icons">calendar_month</i>Due-Date<input type="datetime-local" id="task-due-date" required></label>
+        <label for="task-location"><i class="material-icons">location_on</i>Location<input type="text" id="task-location" ></label>
+        <p>
+          <button class="cancel-task-button" type="button">Cancel</button>
+          <button class="save-task-button" type="button">Save</button>
+        </p>
+      </form>
+    
+    </main>
+    <script src="to-do js/add_task.js"></script> 
+  </body>
+  </html>
