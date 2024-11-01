@@ -14,7 +14,14 @@
       <div class="nav-items">
         <nav>
           <ul class="nav-links">
-            <li class="nav-item"><a href=""><i class="material-icons">filter_alt</i></a></li>
+            <li class="nav-item"><i class="material-icons" id="filter-icon">filter_alt</i>
+              <div id="filter-dropdown" class="dropdown">
+                <div class="dropdown-option" data-value="All">All Tasks</div>
+                <div class="dropdown-option" data-value="Completed">Completed</div>
+                <div class="dropdown-option" data-value="Pending">Pending</div>
+                <div class="dropdown-option" data-value="Overdue">Overdue</div>
+              </div>
+            </li>
             <li class="nav-item"><a href="add_task.html"><i class="material-icons">add</i></a></li>
             <li class="nav-item"><a href=""><i class="material-icons">menu</i></a></li>
             <li class="nav-item"><a href=""><i class="material-icons">person</i></a></li>

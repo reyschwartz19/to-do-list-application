@@ -35,6 +35,19 @@
       
     </p>
   </main>
+  <div class="modal" id="modal">
+    <h1>Edit Class</h1>
+    <form>
+      <label for="edit-task-name">Task-Name<input id="edit-task-name" type="text" required name="edit-task-name"></label>
+        <label for="edit-task-description">Description<textarea id="edit-task-description" placeholder="Enter a descrition for your task" rows="3" cols="30" ></textarea> </label>
+        <label for="edit-task-due-date">Due-Date<input type="datetime-local" id="edit-task-due-date" required></label>
+        <label for="edit-task-location">Location<input type="text" id="edit-task-location" ></label>
+        <p class="edit-p">
+          <button class="cancel-task-edit-button" type="button">Cancel</button>
+          <button class="save-task-edit-button" type="button">Save</button>
+        </p>
+    </form>
+  </div>
   <script src="to-do js/details.js"></script>
   </body>
   </html>

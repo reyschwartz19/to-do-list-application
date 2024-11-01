@@ -46,3 +46,49 @@ button{
   display: block;
   color: #818589;
 }
+main{
+  z-index: -1;
+}
+.modal{
+  background-color: #f4f4f4;
+  
+  z-index: 1;
+  margin: auto;
+  width: 50vw;
+  height: 90vh;
+  border-radius: 8px;
+  padding: 50px;
+}
+label{
+  display: block;
+  padding: 15px 0;
+  font-size: 23px;
+  color: #333;
+}
+input, textarea{
+  display: inline;
+  min-width: 100%;
+  height: 5vh;
+  font-size: 20px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05); 
+  border: 1px solid #ddd;
+}
+textarea{
+  min-height: 10vh;
+  max-height: 10vh;
+  max-width: 100%;
+}
+.edit-p{
+  display: flex;
+  justify-content: space-between;
+}
+.save-task-edit-button, .cancel-task-edit-button{
+  width: 5vw;
+  height: 4vh;
+  font-size: 17px;
+  background-color: #007bff;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  border: none;
+}

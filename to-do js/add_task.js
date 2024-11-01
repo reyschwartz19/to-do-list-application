@@ -9,15 +9,18 @@ document.addEventListener('DOMContentLoaded', function() {
       const description = document.querySelector('#task-description').value;
       const taskId = Date.now().toString();
       const location = document.querySelector('#task-location').value;
+      const userDateInput  = new Date(dueDate);
+      const currentDate = new Date;
+      
       // Optionally, you can redirect to the task list page after saving.
-      if (taskName && dueDate) {
+      if (taskName && dueDate && userDateInput > currentDate) {
           // You can save the task to localStorage or a database here
           const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
           tasks.push({ name: taskName, dueDate, description, status: 'Pending', taskId, location });
           localStorage.setItem('tasks', JSON.stringify(tasks));
           window.location.href = 'to_do.html'; // Assuming your task list is on index.html
       } else {
-          alert("Please fill all required fields");
+          alert("Please fill all required fields or ensure date/time hasn't passed");
       }
   });
 
